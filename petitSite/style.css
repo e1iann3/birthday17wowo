@@ -1,0 +1,51 @@
+#produits{
+   
+    left: 100px;
+   /* top: 50px;*/
+    width: 500px;
+
+}
+p{
+    text-align: center;
+}
+
+H1{
+    text-align: center;
+    text-shadow: violet;
+}
+#header{
+    width: 1120px;
+    margin: auto;
+    text-align: center;
+}
+.cadre{
+background-color: white;
+margin: auto;
+text-align: center;
+width: 1200px;
+}
+
+body{
+    background-color: thistle;
+}
+
+.boutons{
+    margin: auto;
+    margin-top: 2%;
+}
+.top{
+    margin: auto;
+text-align: center;
+position: relative;
+}
+
+.wrong{
+  visibility: hidden;
+    margin: auto;
+    text-align: center;
+    margin-top: -520px;
+    margin-left: 530px;
+    
+    z-index: 1;
+     position: absolute;
+}

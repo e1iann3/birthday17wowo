@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="icon" type="image/png" sizes="16x16"
+        href="https://www.pngitem.com/pimgs/m/111-1117533_symbols-funny-funny-icons-hd-png-download.png">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css"
+        integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+</head>
+
+<body>
+    <br><br>
+    <div class="top"><img src="https://media4.giphy.com/media/ehhABsd5nh0m4CANvZ/giphy.gif" alt=""> <img
+            src="https://i.pinimg.com/originals/09/7a/1d/097a1db8a3d7bc28e797d97c48adaebc.gif" alt=""><img
+            src="https://media4.giphy.com/media/ehhABsd5nh0m4CANvZ/giphy.gif" alt=""></div><br>
+    <h1>Is Wôwô the most gorgeous gurl in the world?</h1>
+    <div class="boutons">
+        <p>
+            <button class="btn btn-default btn-lg" onclick="mynon()"><i class="fas fa-calendar-alt"></i>Non</button>
+            <a href="fete.html"><button class="btn btn-default btn-lg"><i
+                        class="fas fa-calendar-alt"></i>Oui</button></a>
+
+        </p>
+    </div>
+    <div class="wrong" id="wrong"> <img style="width:500px;" src="https://media4.giphy.com/media/11tTNkNy1SdXGg/200.gif"
+            alt=""></div>
+    <div class="wrong" id="wrongDog"> <img style="width:500px;"
+            src="https://media.giphy.com/media/5jYv7X4NC2uzjLhXnP/giphy.gif" alt=""></div>
+    <div class="wrong" id="wrongGirl"> <img style="width:500px;"
+            src="https://i.pinimg.com/originals/b1/ee/7d/b1ee7d4be19cb1e958ba46bd49493368.gif" alt=""></div>
+    <div class="wrong" id="wrongpeng"> <img style="width:500px;"
+            src="https://iceshelfvibes.ucsd.edu/wp-content/uploads/sites/413/2015/11/angry-penguin-animation.gif"
+            alt=""></div>
+    <p><img src="https://media4.giphy.com/media/MkD4Qu7U3vZPmDgVMD/giphy.gif" alt=""></p>
+    <script>
+        function myoui() {
+            document.getElementById("demo").innerHTML = "Hello World";
+        }
+
+        function mynon() {
+            var colors = [
+                "wrongDog", "wrong", "wrongGirl", "wrongpeng"
+            ];
+            var random_color = colors[Math.floor(Math.random() * colors.length)];
+            /*  var x = document.getElementById('rgb');
+  
+              document.getElementById("rgb").innerHTML = random_color;
+              /* document.getElementById("cadre").innerHTML = "Wrong answer";*/
+
+
+            document.getElementById(random_color).style.visibility = "visible"
+            setTimeout(function () {
+                document.getElementById(random_color).style.visibility = "hidden"
+            }, 1900)
+        }
+    </script>
+</body>
+
+</html>
